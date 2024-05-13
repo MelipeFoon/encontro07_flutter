@@ -5,6 +5,7 @@ import 'package:encontro07_flutter/widgets/app_bar/web_app_bar.dart';
 import 'package:encontro07_flutter/widgets/star_widget.dart';
 import 'package:encontro07_flutter/widgets/top_section/mobile_top_section.dart';
 import 'package:encontro07_flutter/widgets/top_section/web_top_section.dart';
+import 'package:encontro07_flutter/widgets/img_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,7 +43,20 @@ class HomePage extends StatelessWidget {
                 StarWidget(),
                 StarWidget(),
               ],
-            )
+            ),
+            const Padding(padding: EdgeInsets.all(16)),
+            const Wrap(
+              runSpacing: 20,
+              spacing: 20,
+              alignment: WrapAlignment.center,
+              children: [
+                ImgWidget(),
+                ImgWidget(),
+                ImgWidget(),
+                ImgWidget(),
+                ImgWidget(),
+              ],
+            ),
           ],
         ),
       );
